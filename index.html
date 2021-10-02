@@ -4,11 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Figuras Geometricas | Curso Práctico de JavaScript</title>
 </head>
 <body>
-    <h1>Figuras Geométricas</h1>
+   
+    <h1>Fíguras Geométricas</h1>
+    <header>
+        <p class="text-secondary">Este es el primer taller del Curso Práctico de JavaScript</p>
+    </header>
+    <main>
+    <section class="card">
+        <h2 class="card__title">Cuadrado</h2>
+        <div class="card__body">
+            <form action="">
+                <div class="row">
+                    <div class="col-40 text-end">
+                        <label class="card__subtitle text-end" for="inputCuadrado">
+                            Lado: 
+                        </label>
+                    </div>
+                    <div class="col-60">
+                        <input  id="inputCuadrado"  class="form-control" type="number" >
+                    </div>
+                </div>
+                <div class="row justify-center mt-3">
+                    <button class="btn" type="button" onclick="calcularAreaCuadrado()">
+                        Perímetro
+                    </button>
+                    <button class="btn" type="button" onclick="calcularPerimetroCuadrado()">
+                        Área
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2 class="card__title">Triangulo</h2>
+        <div class="card__body">
+            <form action="">
+                <div class="row">
+                    <div class="col-40 text-end">
+                        <label class="card__subtitle text-end" for="">
+                            Lado 1: 
+                        </label>
+                    </div>
+                    <div class="col-60">
+                        <input class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-40 text-end">
+                        <label class="card__subtitle text-end" for="">
+                            Lado 2: 
+                        </label>
+                    </div>
+                    <div class="col-60">
+                        <input class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-40 text-end">
+                        <label class="card__subtitle text-end" for="">
+                            Lado 3: 
+                        </label>
+                    </div>
+                    <div class="col-60">
+                        <input class="form-control" type="number">
+                    </div>
+                </div>
+                <div class="row justify-center mt-3">
+                    <button class="btn">
+                        Perímetro
+                    </button>
+                    <button class="btn">
+                        Área
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2 class="card__title">Circulo</h2>
+        <div class="card__body">
+            <form action="">
+                <div class="row">
+                    <div class="col-40 text-end">
+                        <label class="card__subtitle text-end" for="">
+                            Radio: 
+                        </label>
+                    </div>
+                    <div class="col-60">
+                        <input class="form-control" type="number">
+                    </div>
+                </div>
+                
+                <div class="row justify-center mt-3">
+                    <button class="btn">
+                        Perímetro
+                    </button>
+                    <button class="btn">
+                        Área
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
     
+    </main>
     <script src="./figuras.js"></script>
 </body>
 </html>

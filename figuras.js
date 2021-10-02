@@ -35,3 +35,4 @@ function areaCirculo(radio){
 
 
 
+function calcularPerimetroCuadrado()
